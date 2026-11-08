@@ -1,0 +1,41 @@
+.app-container {
+  width: min(1000px, calc(100% - 80px));
+  margin: 0 auto;
+  padding: 36px 0 48px;
+}
+
+.app-header {
+  padding: 25px 16px 27px;
+  border-bottom: 1px solid #333;
+  text-align: center;
+}
+
+.app-header h1 {
+  margin: 0;
+  color: #222;
+  font-size: clamp(1.5rem, 4.5vw, 2.15rem);
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  line-height: 1.15;
+}
+
+.app-main {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+@media (max-width: 560px) {
+  .app-container {
+    width: calc(100% - 32px);
+    padding: 24px 0 32px;
+  }
+
+  .app-header {
+    padding: 20px 16px 22px;
+  }
+
+  .app-main {
+    gap: 20px;
+  }
+}
